@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="ext-resource-dependency" content="assets/not-all-green-slides.pdf" data-resource-id="slidesPdf" />
+<script src="./support.js"></script>
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#f2efe8">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#f2efe8"/>
+    <line x1="360" y1="320" x2="560" y2="430" stroke="#2e7d52" stroke-width="6"/>
+    <line x1="560" y1="430" x2="760" y2="350" stroke="#2e7d52" stroke-width="6"/>
+    <line x1="560" y1="430" x2="640" y2="560" stroke="#2e7d52" stroke-width="6"/>
+    <line x1="760" y1="350" x2="840" y2="500" stroke="#2e7d52" stroke-width="6"/>
+    <g fill="#faf8f3" stroke="#2e7d52" stroke-width="7">
+      <circle cx="360" cy="320" r="44"/>
+      <circle cx="560" cy="430" r="50"/>
+      <circle cx="760" cy="350" r="44"/>
+      <circle cx="640" cy="560" r="40"/>
+      <circle cx="840" cy="500" r="44"/>
+    </g>
+  </svg>
+</template>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0;background:#f2efe8;}
+  *{box-sizing:border-box;}
+  ::selection{background:rgba(46,125,82,0.18);}
+  summary{cursor:pointer;}
+  a{transition:color .15s ease, border-color .15s ease;}
+  button{transition:color .15s ease, border-color .15s ease, background .15s ease;}
+</style>
+</helmet>
+<div style="min-height:100vh; background:#f2efe8; color:#2b2a25; font-family:'JetBrains Mono',monospace; -webkit-font-smoothing:antialiased;">
+  <div style="max-width:880px; margin:0 auto; padding:0 30px 88px;">
+
+    <header style="display:flex; align-items:center; justify-content:space-between; padding:30px 0 0;">
+      <a href="index.html" style="font-family:'Lora',serif; font-weight:600; font-size:24px; letter-spacing:-0.01em; color:#23221d; text-decoration:none;">Nermine Bouabid</a>
+      <nav style="display:flex; gap:24px; font-size:13px;">
+        <a href="index.html" style="color:#76726a; text-decoration:none; padding-bottom:3px; border-bottom:1.5px solid transparent;" style-hover="color:#23221d;">Home</a>
+        <a href="about.html" style="color:#2e7d52; text-decoration:none; padding-bottom:3px; border-bottom:1.5px solid #2e7d52;">About</a>
+      </nav>
+    </header>
+
+    <div style="height:1px; background:#d9d4c8; margin:22px 0 30px;"></div>
+
+    <div style="display:flex; gap:34px; align-items:stretch; flex-wrap:wrap;">
+      <div style="flex:1; min-width:300px;">
+        <p style="margin:0 0 16px; font-size:13.5px; line-height:1.85; color:#3a3833;"><strong style="color:#1f1e19;">Bio.</strong> I'm a PhD candidate in Accounting and Finance at <a href="https://www.lancaster.ac.uk/lums/" target="_blank" rel="noopener" style="color:#2e7d52; text-decoration:none; border-bottom:1px solid rgba(46,125,82,0.3);" style-hover="border-bottom:1px solid #2e7d52;">Lancaster University Management School</a>. I hold an MSc in International Economy and Business (Distinction) from the <a href="https://eco.u-szeged.hu/english" target="_blank" rel="noopener" style="color:#2e7d52; text-decoration:none; border-bottom:1px solid rgba(46,125,82,0.3);" style-hover="border-bottom:1px solid #2e7d52;">University of Szeged</a> and a BSc in Business Administration (Valedictorian) from <a href="https://tunis-business-school.tn/" target="_blank" rel="noopener" style="color:#2e7d52; text-decoration:none; border-bottom:1px solid rgba(46,125,82,0.3);" style-hover="border-bottom:1px solid #2e7d52;">Tunis Business School</a>. I'm an Affiliated Researcher at the <a href="https://www.lancaster.ac.uk/pentland/" target="_blank" rel="noopener" style="color:#2e7d52; text-decoration:none; border-bottom:1px solid rgba(46,125,82,0.3);" style-hover="border-bottom:1px solid #2e7d52;">Pentland Centre for Sustainability in Business</a>, and in early 2026 was a visiting researcher at Frankfurt School of Finance and Management, hosted by Prof Van Lent.</p>
+        <p style="margin:0 0 16px; font-size:13.5px; line-height:1.85; color:#3a3833;"><strong style="color:#1f1e19;">Research.</strong> My work spans sustainable finance, corporate sustainability disclosure, and AI &amp; NLP in finance. I build and apply state-of-the-art AI to measure firms' environmental performance and its implications for corporate behaviour and market valuation.</p>
+        <p style="margin:0; font-size:13.5px; line-height:1.85; color:#3a3833;"><strong style="color:#1f1e19;">Personal.</strong> I'm Tunisian, based in the UK. I enjoy long walks, recreational programming, watch modding, and learning about fragrances.</p>
+      </div>
+      <div style="flex:none; width:210px; display:flex; flex-direction:column;">
+        <div style="position:relative; flex:1 1 auto; min-height:220px; border:1px solid #ddd8cc; background:#efebe2; overflow:hidden;">
+          <canvas ref="{{ canvasRef }}" style="position:absolute; inset:0; width:100%; height:100%; display:block;"></canvas>
+        </div>
+        <p style="margin:7px 0 0; text-align:right; font-size:11px; color:#9a958a;">A network of firms</p>
+      </div>
+    </div>
+
+    <div ref="{{ tabsRef }}" style="display:flex; gap:11px; flex-wrap:wrap; justify-content:center; margin:32px 0 0;">
+      <button onClick="{{ onResearch }}" data-tab="research" style="display:inline-flex; align-items:center; padding:10px 16px; border:1px solid #cfc9bb; border-radius:6px; background:#faf8f3; font-family:'JetBrains Mono',monospace; font-size:12.5px; color:#2b2a25; cursor:pointer;">Research</button>
+      <button onClick="{{ onTalks }}" data-tab="talks" style="display:inline-flex; align-items:center; padding:10px 16px; border:1px solid #cfc9bb; border-radius:6px; background:#faf8f3; font-family:'JetBrains Mono',monospace; font-size:12.5px; color:#2b2a25; cursor:pointer;">Talks</button>
+      <button onClick="{{ onProjects }}" data-tab="projects" style="display:inline-flex; align-items:center; padding:10px 16px; border:1px solid #cfc9bb; border-radius:6px; background:#faf8f3; font-family:'JetBrains Mono',monospace; font-size:12.5px; color:#2b2a25; cursor:pointer;">Codes</button>
+      <button onClick="{{ onTeaching }}" data-tab="teaching" style="display:inline-flex; align-items:center; padding:10px 16px; border:1px solid #cfc9bb; border-radius:6px; background:#faf8f3; font-family:'JetBrains Mono',monospace; font-size:12.5px; color:#2b2a25; cursor:pointer;">Teaching</button>
+      <button onClick="{{ onHonors }}" data-tab="honors" style="display:inline-flex; align-items:center; padding:10px 16px; border:1px solid #cfc9bb; border-radius:6px; background:#faf8f3; font-family:'JetBrains Mono',monospace; font-size:12.5px; color:#2b2a25; cursor:pointer;">Honors</button>
+      <button onClick="{{ onMemberships }}" data-tab="memberships" style="display:inline-flex; align-items:center; padding:10px 16px; border:1px solid #cfc9bb; border-radius:6px; background:#faf8f3; font-family:'JetBrains Mono',monospace; font-size:12.5px; color:#2b2a25; cursor:pointer;">Memberships</button>
+    </div>
+
+    <div style="margin:34px 0 0;">
+
+      <sc-if value="{{ isResearch }}" hint-placeholder-val="{{ true }}">
+        <section id="research">
+          <h2 style="font-family:'Lora',serif; font-weight:600; font-size:25px; letter-spacing:-0.01em; color:#23221d; margin:0 0 4px;">Research</h2>
+          <div style="height:1px; background:#d9d4c8; margin:14px 0 24px;"></div>
+
+          <article style="margin:0 0 30px;">
+            <h3 style="font-family:'Lora',serif; font-weight:600; font-size:18px; line-height:1.4; margin:0 0 5px; color:#26251f;">Physical Peers: A Satellite-Based Measure of Firm Similarity</h3>
+            <p style="margin:0 0 9px; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#9a958a;">Work in Progress</p>
+            <p style="margin:0 0 11px; font-size:12.5px; line-height:1.7; color:#615d54;">Constructs a novel pairwise measure of firm physical-environment similarity from satellite-derived embeddings of corporate facilities for 2,457 U.S. public firms (2017–2024).</p>
+            <details>
+              <summary style="font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:#2e7d52;">Abstract</summary>
+              <div style="margin:11px 0 0; padding:15px 17px; background:#e9e4d8; border:1px solid #d9d4c8; border-radius:5px;">
+                <p style="margin:0; font-size:12.5px; line-height:1.75; color:#4b483f;">Using satellite-derived embeddings of corporate facilities, I construct a pairwise measure of firm physical-environment similarity yielding a panel of 226,058 firm-pair-year observations for 2,457 U.S. public firms from 2017 to 2024. The measure is largely independent of industry classifications, product-market similarity, geographic proximity, and urbanization: headquarters-state colocation, industry, climate, and the built environment jointly leave roughly three quarters of its variation unexplained. Physical peers exhibit similar fundamentals and risk exposures (asset tangibility, operating intensity, environmental risk scores, and climate-related attention in earnings calls), and these associations hold among firms in different industries. Our findings suggest that satellite-derived measures of firms' physical environments capture an economically distinct dimension of relatedness, with implications for how investors and researchers identify peer firms.</p>
+              </div>
+            </details>
+          </article>
+
+          <article style="margin:0;">
+            <h3 style="font-family:'Lora',serif; font-weight:600; font-size:18px; line-height:1.4; margin:0 0 5px; color:#26251f;">Not All Green is Equal: The Financial Payoff of Doing More Good</h3>
+            <p style="margin:0 0 9px; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#9a958a;">Working Paper</p>
+            <p style="margin:0 0 11px; font-size:12.5px; line-height:1.7; color:#615d54;">Distinguishes proactive <em>more good</em> environmental strategies from compliance-driven <em>less harm</em> ones, and shows they carry distinct financial payoffs using LLMs applied to U.S. sustainability reports (2015–2023).</p>
+            <div style="display:flex; gap:22px; align-items:baseline; flex-wrap:wrap;">
+              <details style="flex:1; min-width:260px;">
+                <summary style="font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:#2e7d52;">Abstract</summary>
+                <div style="margin:11px 0 0; padding:15px 17px; background:#e9e4d8; border:1px solid #d9d4c8; border-radius:5px;">
+                  <p style="margin:0; font-size:12.5px; line-height:1.75; color:#4b483f;">We distinguish between two types of environmental activities: "more good" (restoring and enhancing ecosystems) and "less harm" (reducing negative externalities). Using large-language models applied to U.S. corporate sustainability reports (2015–2023), we find that more good actions predict higher future firm valuation, driven by stronger sales growth and increased institutional investor demand. This effect strengthened after 2020 and varies across industries based on strategic relevance. In contrast, less harm activities show no systematic relation to valuation, primarily improving operational efficiency. Results hold across multiple robustness tests. Our findings highlight the distinct financial payoffs of proactive versus compliance-driven environmental strategies, with implications for corporate resource allocation and sustainability policy.</p>
+                </div>
+              </details>
+              <a href="{{ slidesHref }}" target="_blank" rel="noopener" style="flex:none; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:#2e7d52; text-decoration:none; border-bottom:1px solid rgba(46,125,82,0.3);" style-hover="border-bottom:1px solid #2e7d52;">Presentation ↗</a>
+            </div>
+          </article>
+        </section>
+      </sc-if>
+
+      <sc-if value="{{ isTalks }}">
+        <section id="talks">
+          <h2 style="font-family:'Lora',serif; font-weight:600; font-size:25px; letter-spacing:-0.01em; color:#23221d; margin:0 0 4px;">Talks &amp; Presentations</h2>
+          <div style="height:1px; background:#d9d4c8; margin:14px 0 22px;"></div>
+
+          <div style="display:flex; gap:18px; align-items:baseline; padding:0 0 14px; border-bottom:1px solid #e3ddd0;">
+            <span style="font-size:12px; color:#2e7d52; flex:none; width:64px;">Jul 2026</span>
+            <span style="font-size:13.5px; line-height:1.65; color:#3a3833;"><strong style="font-weight:700; color:#26251f;">AFAANZ 2026</strong> — Annual Conference. Melbourne, Australia. <span style="color:#9a958a;">(Upcoming)</span></span>
+          </div>
+
+          <p style="margin:26px 0 12px; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:#76726a;">"Physical Peers" — presented at</p>
+          <div style="display:flex; gap:18px; align-items:baseline; padding:8px 0; border-bottom:1px solid #e3ddd0;"><span style="font-size:12px; color:#9a958a; flex:none; width:78px;">Jun 2026</span><span style="font-size:13.5px; line-height:1.65; color:#3a3833;">LUMS Research Conference <span style="color:#2e7d52; font-weight:700;">— Best Poster Prize</span></span></div>
+          <div style="display:flex; gap:18px; align-items:baseline; padding:8px 0;"><span style="font-size:12px; color:#9a958a; flex:none; width:78px;">2026</span><span style="font-size:13.5px; line-height:1.65; color:#3a3833;">Brown Bag Seminar, Department of Accounting and Finance, LUMS</span></div>
+
+          <p style="margin:26px 0 12px; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:#76726a;">"Not All Green is Equal" — presented at</p>
+          <div style="display:flex; gap:18px; align-items:baseline; padding:8px 0; border-bottom:1px solid #e3ddd0;"><span style="font-size:12px; color:#9a958a; flex:none; width:78px;">2026</span><span style="font-size:13.5px; line-height:1.65; color:#3a3833;">Sustainable Finance Conference, Leeds &amp; Cardiff</span></div>
+          <div style="display:flex; gap:18px; align-items:baseline; padding:8px 0; border-bottom:1px solid #e3ddd0;"><span style="font-size:12px; color:#9a958a; flex:none; width:78px;">2025</span><span style="font-size:13.5px; line-height:1.65; color:#3a3833;">Institute of European Finance (IEF) Conference, Bangor University</span></div>
+          <div style="display:flex; gap:18px; align-items:baseline; padding:8px 0; border-bottom:1px solid #e3ddd0;"><span style="font-size:12px; color:#9a958a; flex:none; width:78px;">2025</span><span style="font-size:13.5px; line-height:1.65; color:#3a3833;">EFAG Third Summer Symposium on Sustainability &amp; AI, University of Durham</span></div>
+          <div style="display:flex; gap:18px; align-items:baseline; padding:8px 0;"><span style="font-size:12px; color:#9a958a; flex:none; width:78px;">2025</span><span style="font-size:13.5px; line-height:1.65; color:#3a3833;">Lancaster–Manchester–Warwick–Oxford Joint PhD Workshop on Finance and Econometrics</span></div>
+        </section>
+      </sc-if>
+
+      <sc-if value="{{ isTeaching }}">
+        <section id="teaching">
+          <h2 style="font-family:'Lora',serif; font-weight:600; font-size:25px; letter-spacing:-0.01em; color:#23221d; margin:0 0 4px;">Teaching</h2>
+          <div style="height:1px; background:#d9d4c8; margin:14px 0 22px;"></div>
+          <h3 style="font-family:'Lora',serif; font-weight:600; font-size:18px; margin:0 0 4px; color:#26251f;">Lancaster University Management School</h3>
+          <p style="margin:0 0 12px; font-size:12px; color:#76726a;">Teaching Assistant &nbsp;·&nbsp; Undergraduate &nbsp;·&nbsp; Lancaster, UK</p>
+          <ul style="list-style:none; margin:0 0 28px; padding:0;">
+            <li style="display:flex; gap:13px; padding:6px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span>AcF 100: Introduction to Accounting and Finance <span style="color:#9a958a;">(2025)</span></span></li>
+            <li style="display:flex; gap:13px; padding:6px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span>AcF 111/261: Introduction to Financial Accounting for Managers <span style="color:#9a958a;">(2025)</span></span></li>
+            <li style="display:flex; gap:13px; padding:6px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span>AcF 211M: Accounting Information Systems and Auditing <span style="color:#9a958a;">(2024)</span></span></li>
+          </ul>
+          <h3 style="font-family:'Lora',serif; font-weight:600; font-size:18px; margin:0 0 4px; color:#26251f;">University of Szeged</h3>
+          <p style="margin:0 0 12px; font-size:12px; color:#76726a;">Teacher's Assistant &nbsp;·&nbsp; Postgraduate &nbsp;·&nbsp; Szeged, Hungary</p>
+          <ul style="list-style:none; margin:0; padding:0;">
+            <li style="display:flex; gap:13px; padding:6px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span>Macroeconomics <span style="color:#9a958a;">(2022)</span></span></li>
+            <li style="display:flex; gap:13px; padding:6px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span>International Political Economy <span style="color:#9a958a;">(2021)</span></span></li>
+          </ul>
+        </section>
+      </sc-if>
+
+      <sc-if value="{{ isHonors }}">
+        <section id="honors">
+          <h2 style="font-family:'Lora',serif; font-weight:600; font-size:25px; letter-spacing:-0.01em; color:#23221d; margin:0 0 4px;">Honors, Awards &amp; Funding</h2>
+          <div style="height:1px; background:#d9d4c8; margin:14px 0 18px;"></div>
+          <ul style="list-style:none; margin:0; padding:0;">
+            <li style="display:flex; gap:13px; padding:7px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span>Best Poster Prize, LUMS Research Conference <span style="color:#9a958a;">(June 2026)</span></span></li>
+            <li style="display:flex; gap:13px; padding:7px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span>PhD Scholarship, Department of Accounting and Finance, Lancaster University <span style="color:#9a958a;">(2023 – 2027)</span></span></li>
+            <li style="display:flex; gap:13px; padding:7px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span>National Higher Education Scholarship, Republic of Hungary <span style="color:#9a958a;">(2022 – 2023)</span></span></li>
+            <li style="display:flex; gap:13px; padding:7px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span>Stipendium Hungaricum Scholarship, Republic of Hungary <span style="color:#9a958a;">(2021 – 2023)</span></span></li>
+            <li style="display:flex; gap:13px; padding:7px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span>Presidential Prize for Highest GPA Country-wide, Republic of Tunisia <span style="color:#9a958a;">(2021)</span></span></li>
+            <li style="display:flex; gap:13px; padding:7px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span>Dean's List, Tunis Business School <span style="color:#9a958a;">(2017 – 2021)</span></span></li>
+          </ul>
+          <h3 style="font-family:'Lora',serif; font-weight:600; font-size:16px; margin:26px 0 6px; color:#26251f;">Funding &amp; Grants</h3>
+          <ul style="list-style:none; margin:0; padding:0;">
+            <li style="display:flex; gap:13px; padding:7px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span>Lancaster University Graduate College Travel Grant <span style="color:#9a958a;">(2026)</span></span></li>
+            <li style="display:flex; gap:13px; padding:7px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span><a href="https://www.icra-lancs.uk/" target="_blank" rel="noopener" style="color:#2e7d52; text-decoration:none; border-bottom:1px solid rgba(46,125,82,0.3);" style-hover="border-bottom:1px solid #2e7d52;">International Centre for Research in Accounting (ICRA)</a> Travel Scholarship <span style="color:#9a958a;">(2026)</span></span></li>
+            <li style="display:flex; gap:13px; padding:7px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span>LUMS Conference Funding <span style="color:#9a958a;">(2026)</span></span></li>
+            <li style="display:flex; gap:13px; padding:7px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span>Accounting and Finance Department Conference Funding <span style="color:#9a958a;">(2026)</span></span></li>
+          </ul>
+        </section>
+      </sc-if>
+
+      <sc-if value="{{ isMemberships }}">
+        <section id="memberships">
+          <h2 style="font-family:'Lora',serif; font-weight:600; font-size:25px; letter-spacing:-0.01em; color:#23221d; margin:0 0 4px;">Memberships &amp; Service</h2>
+          <div style="height:1px; background:#d9d4c8; margin:14px 0 18px;"></div>
+          <ul style="list-style:none; margin:0; padding:0;">
+            <li style="display:flex; gap:13px; padding:7px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span><strong style="font-weight:700; color:#26251f;">Member</strong>, AFAANZ (Accounting &amp; Finance Association of Australia and New Zealand)</span></li>
+            <li style="display:flex; gap:13px; padding:7px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span><strong style="font-weight:700; color:#26251f;">Associate Fellow</strong>, Higher Education Academy, UK</span></li>
+            <li style="display:flex; gap:13px; padding:7px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span><strong style="font-weight:700; color:#26251f;">Certified Analyst</strong>, Financial Modeling and Valuation Analyst (CFI)</span></li>
+            <li style="display:flex; gap:13px; padding:7px 0; font-size:13px; line-height:1.6; color:#3a3833;"><span style="color:#2e7d52; flex:none;">—</span><span><strong style="font-weight:700; color:#26251f;">Affiliated Researcher</strong>, Pentland Centre, Lancaster University</span></li>
+          </ul>
+        </section>
+      </sc-if>
+
+      <sc-if value="{{ isProjects }}">
+        <section id="projects">
+          <h2 style="font-family:'Lora',serif; font-weight:600; font-size:25px; letter-spacing:-0.01em; color:#23221d; margin:0 0 4px;">Codes</h2>
+          <div style="height:1px; background:#d9d4c8; margin:14px 0 22px;"></div>
+          <p style="margin:0 0 24px; font-size:13px; line-height:1.8; color:#615d54;">Open-source tools and Python pipelines built for my research on AI, NLP and sustainable finance. Each tile links to its repository on GitHub.</p>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(248px,1fr)); gap:18px;">
+
+            <a href="https://github.com/nbouabid/csr_multimodal_ocr" target="_blank" rel="noopener" style="display:flex; flex-direction:column; border:1px solid #2b2a25; box-shadow:3px 3px 0 #e3ddd0; background:#faf8f3; text-decoration:none; overflow:hidden;" style-hover="box-shadow:5px 5px 0 #d2ecdb; transform:translate(-1px,-1px);">
+              <img src="assets/proj-ocr.png" alt="CSR Multimodal OCR Pipeline" style="width:100%; aspect-ratio:1/1; object-fit:cover; display:block; border-bottom:1px solid #2b2a25;">
+              <div style="padding:14px 15px 16px;">
+                <h3 style="font-family:'Lora',serif; font-weight:600; font-size:16px; line-height:1.3; margin:0 0 7px; color:#26251f;">CSR Multimodal OCR Pipeline</h3>
+                <p style="margin:0 0 11px; font-size:11.5px; line-height:1.6; color:#76726a;">Turns sustainability-report PDFs into NLP-ready text enriched with AI descriptions of charts and figures — capturing ESG data invisible to text-only processing.</p>
+                <p style="margin:0 0 12px; font-size:10px; line-height:1.7; color:#9a958a;">Mistral OCR · CLIP · Pixtral · multimodal LLMs</p>
+                <span style="font-size:11px; color:#2e7d52; border-bottom:1px solid rgba(46,125,82,0.35);">View on GitHub ↗</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/nbouabid/esg_action_extractor" target="_blank" rel="noopener" style="display:flex; flex-direction:column; border:1px solid #2b2a25; box-shadow:3px 3px 0 #e3ddd0; background:#faf8f3; text-decoration:none; overflow:hidden;" style-hover="box-shadow:5px 5px 0 #d2ecdb; transform:translate(-1px,-1px);">
+              <img src="assets/proj-extractor.png" alt="ESG Action Extractor" style="width:100%; aspect-ratio:1/1; object-fit:cover; display:block; border-bottom:1px solid #2b2a25;">
+              <div style="padding:14px 15px 16px;">
+                <h3 style="font-family:'Lora',serif; font-weight:600; font-size:16px; line-height:1.3; margin:0 0 7px; color:#26251f;">ESG Action Extractor</h3>
+                <p style="margin:0 0 11px; font-size:11.5px; line-height:1.6; color:#76726a;">Asynchronously extracts and classifies implemented environmental actions — harm-reducing vs. regenerative — from report PDFs using Gemini Flash with JSON schema enforcement.</p>
+                <p style="margin:0 0 12px; font-size:10px; line-height:1.7; color:#9a958a;">Gemini · asyncio · JSON schema · structured output</p>
+                <span style="font-size:11px; color:#2e7d52; border-bottom:1px solid rgba(46,125,82,0.35);">View on GitHub ↗</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/nbouabid/csr_financial_linkage" target="_blank" rel="noopener" style="display:flex; flex-direction:column; border:1px solid #2b2a25; box-shadow:3px 3px 0 #e3ddd0; background:#faf8f3; text-decoration:none; overflow:hidden;" style-hover="box-shadow:5px 5px 0 #d2ecdb; transform:translate(-1px,-1px);">
+              <img src="assets/proj-linkage.png" alt="CSR-to-Financial Database Linkage" style="width:100%; aspect-ratio:1/1; object-fit:cover; display:block; border-bottom:1px solid #2b2a25;">
+              <div style="padding:14px 15px 16px;">
+                <h3 style="font-family:'Lora',serif; font-weight:600; font-size:16px; line-height:1.3; margin:0 0 7px; color:#26251f;">CSR-to-Financial Database Linkage</h3>
+                <p style="margin:0 0 11px; font-size:11.5px; line-height:1.6; color:#76726a;">Fuzzy-matches CSR report data to CRSP/Compustat financials via a three-pass strategy, attaching accounting controls and stock returns to ESG disclosure measures.</p>
+                <p style="margin:0 0 12px; font-size:10px; line-height:1.7; color:#9a958a;">TF-IDF · cosine similarity · entity resolution</p>
+                <span style="font-size:11px; color:#2e7d52; border-bottom:1px solid rgba(46,125,82,0.35);">View on GitHub ↗</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/nbouabid/esg_action_sentence_filter" target="_blank" rel="noopener" style="display:flex; flex-direction:column; border:1px solid #2b2a25; box-shadow:3px 3px 0 #e3ddd0; background:#faf8f3; text-decoration:none; overflow:hidden;" style-hover="box-shadow:5px 5px 0 #d2ecdb; transform:translate(-1px,-1px);">
+              <img src="assets/proj-sentence-filter.png" alt="ESG Action Sentence Filter" style="width:100%; aspect-ratio:1/1; object-fit:cover; display:block; border-bottom:1px solid #2b2a25;">
+              <div style="padding:14px 15px 16px;">
+                <h3 style="font-family:'Lora',serif; font-weight:600; font-size:16px; line-height:1.3; margin:0 0 7px; color:#26251f;">ESG Action Sentence Filter</h3>
+                <p style="margin:0 0 11px; font-size:11.5px; line-height:1.6; color:#76726a;">Two-stage NLP pipeline that filters report text down to high-signal environmental-action sentences using sequential EnvironmentalBERT classifiers.</p>
+                <p style="margin:0 0 12px; font-size:10px; line-height:1.7; color:#9a958a;">EnvironmentalBERT · spaCy · PyMuPDF · HuggingFace</p>
+                <span style="font-size:11px; color:#2e7d52; border-bottom:1px solid rgba(46,125,82,0.35);">View on GitHub ↗</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/nbouabid/csr_topic_modeler" target="_blank" rel="noopener" style="display:flex; flex-direction:column; border:1px solid #2b2a25; box-shadow:3px 3px 0 #e3ddd0; background:#faf8f3; text-decoration:none; overflow:hidden;" style-hover="box-shadow:5px 5px 0 #d2ecdb; transform:translate(-1px,-1px);">
+              <img src="assets/proj-topic-modeler.png" alt="CSR Topic Modeler" style="width:100%; aspect-ratio:1/1; object-fit:cover; display:block; border-bottom:1px solid #2b2a25;">
+              <div style="padding:14px 15px 16px;">
+                <h3 style="font-family:'Lora',serif; font-weight:600; font-size:16px; line-height:1.3; margin:0 0 7px; color:#26251f;">CSR Topic Modeler</h3>
+                <p style="margin:0 0 11px; font-size:11.5px; line-height:1.6; color:#76726a;">Discovers latent sustainability themes across CSR reports with BERTopic, tracks topic salience over time, and labels clusters with Gemini 2.5 Pro.</p>
+                <p style="margin:0 0 12px; font-size:10px; line-height:1.7; color:#9a958a;">BERTopic · UMAP · HDBSCAN · Gemini · spaCy</p>
+                <span style="font-size:11px; color:#2e7d52; border-bottom:1px solid rgba(46,125,82,0.35);">View on GitHub ↗</span>
+              </div>
+            </a>
+
+          </div>
+        </section>
+      </sc-if>
+
+    </div>
+
+    <footer style="margin-top:64px; padding-top:22px; border-top:1px solid #d9d4c8; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <span style="font-size:11.5px; color:#9a958a;">© 2026 Nermine Bouabid &nbsp;·&nbsp; Last updated June 2026</span>
+      <img src="assets/lums-logo.png" alt="Lancaster University Management School" style="height:46px; display:block;">
+    </footer>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:760,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  constructor(props){
+    super(props);
+    this.state = { tab: 'research' };
+    this.tabsRef = React.createRef();
+    this.canvasRef = React.createRef();
+  }
+  componentDidMount(){ this.applyTabs(); this.initCanvas(); }
+  componentWillUnmount(){
+    cancelAnimationFrame(this._raf);
+    if(this._onResize) window.removeEventListener('resize', this._onResize);
+    if(this._ro) this._ro.disconnect();
+  }
+  initCanvas(){
+    const canvas = this.canvasRef.current;
+    if(!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const gr = 46, gg = 125, gb = 82;
+    const G = (a) => 'rgba(' + gr + ',' + gg + ',' + gb + ',' + a + ')';
+    let W, H, dpr, t = 0;
+    const firms = [];   // drifting companies
+    const motes = [];   // rising leaves
+    const resize = () => {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const rect = canvas.getBoundingClientRect();
+      W = rect.width; H = rect.height;
+      canvas.width = Math.max(1, Math.round(W * dpr));
+      canvas.height = Math.max(1, Math.round(H * dpr));
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      firms.length = 0;
+      const count = Math.max(9, Math.round(W * H / 4600));
+      for(let i = 0; i < count; i++){
+        firms.push({
+          x: Math.random() * W, y: Math.random() * H,
+          vx: (Math.random() - 0.5) * 0.16, vy: (Math.random() - 0.5) * 0.16,
+          s: 3.5 + Math.random() * 3, ph: Math.random() * 6
+        });
+      }
+    };
+    resize();
+    this._onResize = resize;
+    window.addEventListener('resize', resize);
+    if(window.ResizeObserver){ this._ro = new ResizeObserver(() => resize()); this._ro.observe(canvas); }
+    const loop = () => {
+      t += 1;
+      ctx.clearRect(0, 0, W, H);
+      // peer links
+      ctx.lineWidth = 1;
+      for(let i = 0; i < firms.length; i++){
+        for(let j = i + 1; j < firms.length; j++){
+          const a = firms[i], b = firms[j];
+          const dx = a.x - b.x, dy = a.y - b.y;
+          const d = Math.sqrt(dx*dx + dy*dy);
+          if(d < 116){
+            const op = (1 - d/116) * 0.5;
+            ctx.strokeStyle = G(op);
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+          }
+        }
+      }
+      // companies = small squares with a pulse + leaf emission
+      firms.forEach(f => {
+        f.x += f.vx; f.y += f.vy;
+        if(f.x < -10) f.x = W + 10; if(f.x > W + 10) f.x = -10;
+        if(f.y < -10) f.y = H + 10; if(f.y > H + 10) f.y = -10;
+        const pulse = 0.5 + 0.5 * Math.sin(t * 0.04 + f.ph);
+        ctx.beginPath(); ctx.arc(f.x, f.y, f.s + 3 + pulse * 2, 0, 7);
+        ctx.fillStyle = G(0.06 + pulse * 0.05); ctx.fill();
+        ctx.fillStyle = G(0.45 + pulse * 0.4);
+        ctx.fillRect(f.x - f.s/2, f.y - f.s/2, f.s, f.s);
+        if(Math.random() < 0.006) motes.push({ x: f.x, y: f.y, life: 1, r: Math.random()*6, seed: Math.random()*6 });
+      });
+      // rising leaves
+      for(let i = motes.length - 1; i >= 0; i--){
+        const m = motes[i];
+        m.y -= 0.3; m.x += Math.sin(t * 0.04 + m.seed) * 0.25; m.life -= 0.01;
+        if(m.life <= 0){ motes.splice(i, 1); continue; }
+        ctx.save();
+        ctx.translate(m.x, m.y);
+        ctx.rotate(m.r + Math.sin(t * 0.05 + m.seed) * 0.5);
+        ctx.globalAlpha = Math.max(0, m.life) * 0.85;
+        ctx.fillStyle = G(0.8);
+        ctx.beginPath(); ctx.ellipse(0, 0, 2.4, 1.2, 0, 0, 7); ctx.fill();
+        ctx.globalAlpha = 1; ctx.restore();
+      }
+      this._raf = requestAnimationFrame(loop);
+    };
+    loop();
+  }
+  componentDidUpdate(){ this.applyTabs(); }
+  applyTabs(){
+    const c = this.tabsRef.current;
+    if(!c) return;
+    c.querySelectorAll('button[data-tab]').forEach(b => {
+      const on = b.getAttribute('data-tab') === this.state.tab;
+      b.style.borderColor = on ? '#2e7d52' : '#cfc9bb';
+      b.style.background = on ? '#e3f0e7' : '#faf8f3';
+      b.style.color = on ? '#2e7d52' : '#2b2a25';
+    });
+  }
+  set(tab){ this.setState({ tab }); }
+  renderVals(){
+    const tab = this.state.tab;
+    const slidesHref = (typeof window !== 'undefined' && window.__resources && window.__resources.slidesPdf)
+      ? window.__resources.slidesPdf
+      : 'assets/not-all-green-slides.pdf';
+    return {
+      slidesHref,
+      tabsRef: this.tabsRef,
+      canvasRef: this.canvasRef,
+      isResearch: tab === 'research',
+      isTalks: tab === 'talks',
+      isTeaching: tab === 'teaching',
+      isHonors: tab === 'honors',
+      isMemberships: tab === 'memberships',
+      isProjects: tab === 'projects',
+      onResearch: () => this.set('research'),
+      onTalks: () => this.set('talks'),
+      onTeaching: () => this.set('teaching'),
+      onHonors: () => this.set('honors'),
+      onMemberships: () => this.set('memberships'),
+      onProjects: () => this.set('projects')
+    };
+  }
+}
+</script>
+</body>
+</html>

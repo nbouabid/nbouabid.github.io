@@ -7,7 +7,7 @@ Static site for GitHub Pages. **Home page = `index.html`.**
 - `about.html` — About / Research / Talks / Codes / Teaching / Honors / Memberships
 - `support.js` — runtime (required; keep it next to the HTML files)
 - `assets/` — images and the presentation PDF
-- `robots.txt` + `<meta name="robots" content="noindex,nofollow">` — keep the site out of search engines
+- `robots.txt` + `sitemap.xml` — allow search engines to index the site
 - `.nojekyll` — tells GitHub Pages to serve files as-is
 
 ## Publish (simplest way)
@@ -17,5 +17,5 @@ Static site for GitHub Pages. **Home page = `index.html`.**
 4. Wait ~1 minute. Your site is live at `https://yourusername.github.io/` (or `.../repo-name/`), opening on the Home page.
 
 ## Notes
-- Search engines are asked not to index the site (robots meta + robots.txt). This is a request, not a hard block — anyone with the link can still view it.
+- The site is open to search engines (robots.txt allows crawling and sitemap.xml lists both pages). To hide it again, change robots.txt to `Disallow: /` and add `<meta name="robots" content="noindex, nofollow">` to the head of each HTML file.
 - To update content, edit `index.html` / `about.html` and re-upload.
